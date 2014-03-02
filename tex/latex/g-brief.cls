@@ -5,34 +5,34 @@
 %% The original source files were:
 %%
 %% g-brief.dtx  (with options: `class')
-%% 
+%%
 %% =======================================================================
-%% 
+%%
 %% Copyright (C) 1991-2003 Michael Lenzen.
-%% 
+%%
 %% For additional copyright information see further down in this file.
-%% 
+%%
 %% This file is part of the G-BRIEF package.
 %% -----------------------------------------------------------------------
-%% 
+%%
 %% It may be distributed under the terms of the LaTeX Project Public
 %% License (LPPL), as described in lppl.txt in the base LaTeX distribution.
 %% Either version 1.1 or, at your option, any later version.
-%% 
+%%
 %% The latest version of this license is in
-%% 
+%%
 %%          http://www.latex-project.org/lppl.txt
-%% 
+%%
 %% LPPL Version 1.1 or later is part of all distributions of LaTeX
 %% version 1999/06/01 or later.
-%% 
-%% 
+%%
+%%
 %% Error reports in case of UNCHANGED versions to
-%% 
+%%
 %%                            <lenzen@lenzen.com>
 %%                            <m.lenzen@t-online.de>
-%% 
-%% 
+%%
+%%
 \def\filedate{2008/07/15}
 \def\fileversion{4.0.2}
 \def\filedate{2008/07/15}
@@ -331,7 +331,8 @@
           \textrm{\name\ $\cdot$\ \strasse\ $\cdot$\ \ort \ifx
               \land\empty \else \ $\cdot$\ \land \fi } \else
             \textrm{\retouradresse} \fi}}
-      \iftrennlinien \put( -9, -32.10){\line(1,0){85}} \fi
+% Trennlinie fuer die RetourAdresse
+%      \iftrennlinien \put( -9, -32.10){\line(1,0){85}} \fi
 % \iftrennlinien \put( -9, -22.10){\line(1,0){85}} \fi
       \put(-1,-38.15){\parbox[t]{3in}{\ifx \postvermerk\empty \hfill \par
 % \put(-1,-28.15){\parbox[t]{3in}{\ifx \postvermerk\empty \hfill \par
@@ -352,7 +353,8 @@
   \def\@oddfoot{\unitlength1mm
     \begin{picture}(0,0)
       \put(-9,0){\parbox{180mm}{\footnotesize \iftrennlinien
-          \rule{180mm}{0.5pt} \fi
+% remove bottom trennlinie
+%          \rule{180mm}{0.5pt} \fi
           \begin{tabular}{ll}
             \ifx \telefon\empty \else \telefontex & \telefon \\ \fi \ifx
             \telefax\empty \else \telefaxtext & \telefax \\ \fi \ifx
