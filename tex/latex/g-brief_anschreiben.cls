@@ -37,10 +37,10 @@
 \def\fileversion{4.0.2}
 \def\filedate{2008/07/15}
 \def\fileversion{4.0.2}
-\def\filename{g-brief.cls}
+\def\filename{g-brief_anschreiben.cls}
 \NeedsTeXFormat{LaTeX2e}[2001/06/01]
 
-\ProvidesClass{g-brief}[\filedate\space v\fileversion\space g-brief class]
+\ProvidesClass{g-brief_anschreiben}[\filedate\space v\fileversion\space g-brief_anschreiben class]
 
 \newdimen\VorschubH
 \newdimen\VorschubV
@@ -247,7 +247,7 @@
 \newif\ifunserzeichen\unserzeichenfalse
 \def\unserzeichen{\unserzeichentrue}
 
-\newenvironment{g-brief}{
+\newenvironment{g-brief_anschreiben}{
   \thispagestyle{firstpage}
   \setlength\unitlength{1mm}
 
@@ -383,14 +383,14 @@
 
 \IfFileExists{babel.sty}
   {\RequirePackage[\sprache]{babel}[2001/03/01]}
-  {\ClassError{g-brief}
+  {\ClassError{g-brief_anschreiben}
     {Babel not installed !!!}
     {Get babel package !!!}}
 
 \ifx \@docencoding\empty \else
 \IfFileExists{inputenc.sty}
   {\RequirePackage[\@docencoding]{inputenc}}
-  {\ClassError{g-brief}
+  {\ClassError{g-brief_anschreiben}
     {LaTeX2e not complete installed or out of date !!!}
     {Get current LaTeX2e !!!}}
 \fi
