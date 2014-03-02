@@ -196,7 +196,7 @@
 \def\Zusatz#1{\def\zusatz{#1}} \def\zusatz{}
 \def\Ort#1{\def\ort{#1}} \def\ort{}
 \def\Land#1{\def\land{#1}} \def\land{}
-\def\RetourAdresse#1{\def\retouradresse{#1}} \def\retouradresse{}
+%\def\RetourAdresse#1{\def\retouradresse{#1}} \def\retouradresse{}
 
 \def\Telefax#1{\def\telefax{#1}} \def\telefax{}
 \def\Telex#1{\def\telex{#1}} \def\telex{}
@@ -329,8 +329,8 @@
      % \put( -9, -22.00){\makebox(85,4)
         {\scriptsize \ifx \retouradresse\empty
           \textrm{\name\ $\cdot$\ \strasse\ $\cdot$\ \ort \ifx
-              \land\empty \else \ $\cdot$\ \land \fi } \else
-            \textrm{\retouradresse} \fi}}
+              \land\empty \else \ $\cdot$\ \land \fi }% \else
+           \textrm{\retouradresse} \fi}}
 % Trennlinie fuer die RetourAdresse
 %      \iftrennlinien \put( -9, -32.10){\line(1,0){85}} \fi
 % \iftrennlinien \put( -9, -22.10){\line(1,0){85}} \fi
